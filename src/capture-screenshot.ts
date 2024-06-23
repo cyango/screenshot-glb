@@ -26,6 +26,15 @@ export async function captureScreenshot(options: CaptureScreenShotOptions) {
     '--disable-dev-shm-usage',
     '--disable-setuid-sandbox',
     '--no-zygote',
+    '--enable-webgl',
+    '--ignore-gpu-blacklist',
+    // '--use-gl=egl', // Use OpenGL ES through EGL
+      // '--enable-webgl2-compute-context', // Enable WebGL2 Compute Context if needed
+      // '--disable-web-security', // Disable web security for CORS, if your use case requires it
+      // '--disable-setuid-sandbox',
+      // '--enable-accelerated-2d-canvas', // Accelerate 2D canvas
+      // '--disable-gpu-rasterization', // Force software rasterization
+      // '--enable-gpu-rasterization', // Force GPU rasterization
   ];
 
   if (headless) {
